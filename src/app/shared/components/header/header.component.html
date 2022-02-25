@@ -1,0 +1,39 @@
+<mat-toolbar >
+    <mat-toolbar-row>
+      
+
+        <span >  Tracker</span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="space-between">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>search_outline</mat-icon>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <input matInput placeholder="" value="Search">
+                          </mat-form-field>
+                    </button>
+                   
+                </li>
+               
+               
+               
+            </ul>
+            <ul fxLayout="row" fxLayoutGap="20px">
+                
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        Anjali Gupta <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign out
+                        </button>
+                    </mat-menu>
+
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
